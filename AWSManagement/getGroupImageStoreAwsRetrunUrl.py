@@ -4,8 +4,8 @@ from botocore.exceptions import ClientError
 s3_client = boto3.client('s3', region_name='us-east-2', aws_access_key_id = 'AKIAQVWCUMEC62WL74BI',
                         aws_secret_access_key = 'cQTktg2lWsdXcjopXoiu4DkbHbyrtqFADPLUnVRj')
 
-videoPath = "example1.mp4"
-videoNametobeStored = "example1.mp4"
+imagePath = "./example1/e10.jpg"
+imgNametobeStore = "example1.jpg"
 
 def upload_my_file(bucket, folder, file_to_upload, file_name):
 
@@ -24,4 +24,4 @@ def upload_my_file(bucket, folder, file_to_upload, file_name):
 
 
 #Upload file
-upload_my_file("videotofotos", "registrationVideo", videoPath, videoNametobeStored)
+upload_my_file("videotofotos", "groupImageForAttendance", imagePath, imgNametobeStore )
